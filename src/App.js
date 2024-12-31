@@ -26,7 +26,19 @@ const json = {
       "name": "surveyFeedback",
       "elements": [
         { "type": "rating", "name": "surveyEasyRating", "title": "The survey was easy to understand", "isRequired": true, "rateType": "stars" },
-        { "type": "rating", "name": "surveyClearRating", "title": "The instructions were clear", "isRequired": true, "rateType": "stars" }
+        { "type": "rating", "name": "surveyClearRating", "title": "The instructions were clear", "isRequired": true, "rateType": "stars" },
+        {
+          "type": "file",
+          "name": "uploadedFile",
+          "title": "Upload a photo of your car or a travel ticket.",
+          "isRequired": true
+        },
+        {
+          "type": "text",
+          "name": "additionalFeedback",
+          "title": "Do you have any additional feedback?",
+          "isRequired": false
+        }
       ]
     }
   ]
