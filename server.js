@@ -1,10 +1,8 @@
-// Ensure that Babel registers and transpiles JSX on the fly
 require('@babel/register')({
-    ignore: [/node_modules/], // Ignore transpiling files inside node_modules
-    presets: ['@babel/preset-env', '@babel/preset-react'], // Set Babel presets for ES6+ and React JSX
+    ignore: [/node_modules/], 
+    presets: ['@babel/preset-env', '@babel/preset-react'],
   });
   
-  // Import necessary packages after Babel has been registered
   const express = require('express');
   const React = require('react');
   const ReactDOMServer = require('react-dom/server');
@@ -42,4 +40,3 @@ require('@babel/register')({
   app.listen(PORT, () => {
     console.log(`SSR app running at http://localhost:${PORT}`);
   });
-  
